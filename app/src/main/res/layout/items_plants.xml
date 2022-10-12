@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F10606">
+
+    <RelativeLayout
+        android:id="@+id/relMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:id="@+id/imgPlant"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"></ImageView>
+
+        <TextView
+            android:id="@+id/txtPlantName"
+            android:layout_width="397dp"
+            android:layout_height="66dp"
+            android:layout_below="@id/imgPlant"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center|left"
+            android:text="Plant Title"
+            android:textColor="#122CBC"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtPlantDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_below="@id/txtPlantName"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="3"
+            android:text="This is plant description and it is simply just to test the features"
+            android:textSize="16sp"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtPlantDescription"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="0dp"
+            android:background="#E61515"></View>
+
+    </RelativeLayout>
+</RelativeLayout>

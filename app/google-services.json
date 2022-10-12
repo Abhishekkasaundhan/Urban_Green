@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "263240176891",
+    "firebase_url": "https://urban-green-mp.firebaseio.com",
+    "project_id": "urban-green-mp",
+    "storage_bucket": "urban-green-mp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263240176891:android:82d52e871a0f1115620c5e",
+        "android_client_info": {
+          "package_name": "com.urbangreen.urbangreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263240176891-s1onipi95n3t8lahlb55b9l30oc4vj4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtSIApA3MSHNWYGfeo0SDc_GMTTS26Xpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263240176891-s1onipi95n3t8lahlb55b9l30oc4vj4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

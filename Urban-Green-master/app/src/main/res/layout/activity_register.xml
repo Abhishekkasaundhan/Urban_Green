@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nbg3"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="327dp"
+        android:layout_height="177dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toTopOf="@+id/registerName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_round" />
+
+    <EditText
+        android:id="@+id/registerName"
+        android:layout_width="364dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Name"
+        app:layout_constraintBottom_toTopOf="@+id/registerPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/registerPhone"
+        android:layout_width="366dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Phone"
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintBottom_toTopOf="@+id/registerEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="365dp"
+        android:layout_height="44dp"
+
+        android:layout_marginTop="368dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/registerPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="362dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="432dp"
+        android:layout_marginBottom="67dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Password"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/RegisterNow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/RegisterNow"
+        android:layout_width="337dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="544dp"
+
+        android:layout_marginBottom="127dp"
+        android:background="#7BE1DE"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/RegisterNow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

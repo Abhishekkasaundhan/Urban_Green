@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7F8F8"
+    tools:context=".PlantDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#66D8CE"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imgBtnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="14dp"
+                android:src="@drawable/ic_baseline_chevron_left_24"></ImageButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Plant Details"
+                android:textColor="#FFF59C"
+                android:textSize="28sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        android:layout_above="@id/relFooter"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="218dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgPlant"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"></ImageView>
+
+                <TextView
+                    android:id="@+id/txtPlantName"
+                    android:layout_width="403dp"
+                    android:layout_height="79dp"
+                    android:layout_below="@id/imgPlant"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Plant Title"
+                    android:textColor="#0404BF"
+                    android:textSize="36sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/txtPlantDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtPlantName"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="This is plant description and it is simply just to test the features"
+                    android:textSize="16sp"></TextView>
+
+            </RelativeLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnOrderNow"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="Order Now"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="24sp"></Button>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtPlantPrice"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="87dp"
+        android:text="plant  price"
+        android:textColor="#A31E1E"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/plant_price"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginBottom="86dp"
+        android:hint="price"
+        android:textColor="#3156DF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="126dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="123dp"
+        android:gravity="center_vertical"
+        android:text="Plant ID"
+        android:textColor="#AF3F3F"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/plant_IDOP"
+        android:layout_width="278dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="125dp"
+        android:gravity="center_vertical"
+        android:textColor="#1E48B5"
+        android:textIsSelectable="true"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/PlantLink"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="209dp"
+        android:background="#CCF4F4"
+        android:scrollHorizontally="true"
+        android:textColor="#033B8F"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="264dp"
+        android:gravity="bottom"
+        android:text="Product Image Link "
+        android:textColor="#090909"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="146dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/PlantLink"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="163dp"
+        android:gravity="center_vertical"
+        android:text="Seller's contact"
+        android:textColor="#0CC30F"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="246dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="163dp"
+        android:layout_toEndOf="@+id/textView10"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="phone"
+        android:textColor="#0F5A0D"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="193dp"
+        android:layout_height="36dp"
+        android:layout_alignTop="@+id/PlantLink"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-39dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="267dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:gravity="bottom"
+        android:text="Images are for reference only"
+        android:textColor="#F10606"
+        android:textSize="10sp" />
+
+</RelativeLayout>
