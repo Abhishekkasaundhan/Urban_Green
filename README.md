@@ -1,5 +1,5 @@
 # Urban_Green
-Objecject ->This project is purely based on the selling and purchasing of the different varieties of plants and flowers by the nursery to the customer respectively with an easy way without any issue.  
+Objecject ->"This project focuses solely on facilitating the buying and selling of various plants and flowers by nurseries to customers, providing a seamless and user-friendly experience."
 Technology-> "XML" as frontend, "Java as middleware", & "Firebase" as backend.
 
 Play Store Link of Application -> https://play.google.com/store/apps/details?id=com.urbangreen.urbangreen&hl=en-IN
